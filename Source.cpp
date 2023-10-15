@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <fstream>
 #include <string>
 #include <list>
@@ -33,9 +33,8 @@ int main() {
     string line;
     while (getline(file, line)) {
         Day entry;
-        size_t pos = line.find(' ');
-        entry.date = line.substr(0, pos);
-        entry.temperature = stof(line.substr(pos + 1));
+        entry.date = line.substr(0, 10);
+        entry.temperature = stof(line.substr(11));
         insertSorted(days, entry);
     }
 
