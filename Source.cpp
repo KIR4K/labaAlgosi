@@ -57,7 +57,6 @@ int main() {
         if (day.temperature == searchTemperature) {
             cout << "Day with temperature  " << searchTemperature << " found: " << day.date << endl;
             found = true;
-            break;
         }
     }
 
