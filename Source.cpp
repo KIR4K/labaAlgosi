@@ -174,7 +174,7 @@ int main() {
 
 	LinkedList<TemperatureData> data;
 	string line;
-	while (std::getline(file, line)) {
+	while (getline(file, line)) {
 		TemperatureData entry;
 		entry.date = line.substr(0, 10);
 		entry.temperature = stof(line.substr(11));
