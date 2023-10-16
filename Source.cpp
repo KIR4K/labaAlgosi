@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include <fstream>
 #include <string>
-#include <locale>
+
 
 using namespace std;
 template<typename T>
