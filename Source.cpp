@@ -156,7 +156,7 @@ void insertSorted(LinkedList<TemperatureData>& data, const TemperatureData& newD
 	int it = 0;
 	if (data.GetSize() == 0)
 	{
-		data.push_front(newData);
+		data.push_back(newData);
 		return;
 	}
 	while (it != data.GetSize()-1 && data[it] < newData) {
