@@ -153,7 +153,7 @@ bool operator<(const TemperatureData& lhs, const TemperatureData& rhs) {
 }
 
 void insertSorted(LinkedList<TemperatureData>& data, const TemperatureData& newData) {
-	auto it = 0;
+	int it = 0;
 	if (data.GetSize() == 0)
 	{
 		data.push_front(newData);
