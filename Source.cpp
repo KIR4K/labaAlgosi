@@ -123,6 +123,12 @@ void LinkedList<T>::insert(T data, int index)
 	{
 		push_front(data);
 	}
+
+	if ((index > Size)||(index<0))
+	{ 
+		cout << "index out of range" << endl;
+	}
+
 	else
 	{
 		Node<T>* previous = head;
