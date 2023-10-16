@@ -174,7 +174,7 @@ int main() {
 		entry.temperature = stof(line.substr(11));
 		insertSorted(data, entry);
 	}
-
+	file.close();
 	cout << "Days with temperature below 0:" << endl;
 	for (int i = 0; i<data.GetSize()-1;i++) {
 		if (data[i].temperature < 0) {
